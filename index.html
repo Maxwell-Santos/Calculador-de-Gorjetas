@@ -14,19 +14,24 @@
 </head>
 
 <body>
+  <h1>spli<br>tter</h1>
 
   <main>
     <form action="">
-      <section class="bill-content">
+      <section id="bill-content">
 
         <div class="bill">
           <label for="input-num">Bill</label>
-          <img src="src/images/icon-dollar.svg" alt="icon dolar">
-          <input type="number" name="price" class="input-num">
+
+          <div class="bill-input">
+            <img src="src/images/icon-dollar.svg" alt="icon dolar">
+            <input type="number" name="price" class="input-num" placeholder="0">
+          </div>
+
         </div>
 
         <div class="porcent-content">
-          
+
           <span>Select Tip %</span>
 
           <div class="porcent">
@@ -36,53 +41,63 @@
             <button class="porcent-item">25%</button>
             <button class="porcent-item">50%</button>
 
-            <input type="number" id="custom-porcent" class="porcent-item">
+            <!-- <button class="porcent-item">custom</button> -->
+
+
+            <input type="number" id="custom-porcent" class="porcent-item" value="" placeholder="custom">
 
           </div>
         </div>
 
+
         <div class="num-people">
-          <img src="src/images/icon-person.svg" alt="icon people">
-          <input type="number" name="" id="">
+          <label for="input-num">Number of people</label>
+
+          <div class="people-input">
+            <img src="src/images/icon-person.svg" alt="icon person">
+            <input type="number" name="persons" class="input-num" placeholder="0">
+          </div>
+
+      </section>
+
+
+      <section id="count-content">
+
+        <div class="tip-amount-content">
+          <div>
+            <h3>tip amount</h3>
+            <p>/ person</p>
+          </div>
+
+          <div class="cotage">
+            <span>$</span><span>0.00</span>
+          </div>
+
         </div>
 
+        <div class="total-content">
+          <div>
+            <h3>total</h3>
+            <p>/ person</p>
+          </div>
+
+          <div class="cotage">
+            <span>$</span><span>0.00</span>
+          </div>
+
+        </div>
+
+        <input type="reset" value="reset" class="reset">
 
       </section>
 
-      <section>
-
-        <div class=""></div>
-        <div class=""></div>
-
-        <button>reset</button>
-
-      </section>
     </form>
   </main>
-  Bill
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+    Coded by <a href="https://github.com/Maxwell-Santos" target="_blank">Maxwell Santos</a>
+  </footer>
 
   <script src="src/script/index.js"></script>
 </body>
