@@ -17,11 +17,11 @@
   <h1>spli<br>tter</h1>
 
   <main>
-    <form action="">
+    <form>
       <section id="bill-content">
 
         <div class="bill">
-          <label for="input-num">Bill</label>
+          <label for="one">Bill</label>
 
           <div class="bill-input">
             <p>Can't be zero</p>
@@ -36,11 +36,11 @@
           <span>Select Tip %</span>
 
           <div class="porcent">
-            <input type="button" class="porcent-item" onclick="calcPorcentage('5')" value="5%">   
-            <input type="button" class="porcent-item" onclick="calcPorcentage('10')" value="10%">  
-            <input type="button" class="porcent-item" onclick="calcPorcentage('15')" value="15%">  
-            <input type="button" class="porcent-item" onclick="calcPorcentage('25')" value="25%">  
-            <input type="button" class="porcent-item" onclick="calcPorcentage('50')" value="50%">  
+            <input type="button" class="porcent-item" name="item" onclick="calcPorcentage('5')" value="5%">   
+            <input type="button" class="porcent-item" name="item" onclick="calcPorcentage('10')" value="10%">  
+            <input type="button" class="porcent-item" name="item" onclick="calcPorcentage('15')" value="15%">  
+            <input type="button" class="porcent-item" name="item" onclick="calcPorcentage('25')" value="25%">  
+            <input type="button" class="porcent-item" name="item" onclick="calcPorcentage('50')" value="50%">  
 
             <input type="number" id="custom-porcent" class="porcent-item" value="" placeholder="custom">
 
@@ -49,7 +49,7 @@
 
 
         <div class="num-people">
-          <label for="input-num">Number of people</label>
+          <label for="two">Number of people</label>
 
           <div class="people-input">
             <p>Can't be zero</p>
@@ -70,7 +70,7 @@
           </div>
 
           <div class="cotage">
-            <span>$</span><span>0.00</span>
+            <span>$</span><span id="tip-person">0.00</span>
           </div>
 
         </div>
@@ -82,7 +82,7 @@
           </div>
 
           <div class="cotage">
-            <span>$</span><span>0.00</span>
+            <span>$</span><span id="total-person">0.00</span>
           </div>
 
         </div>

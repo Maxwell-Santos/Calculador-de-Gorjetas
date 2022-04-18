@@ -44,7 +44,7 @@ h1 {
 
 }
 
-input[type=number] {
+input[type=number]{
   appearance: none;
   border: none;
   outline: none;
@@ -99,7 +99,7 @@ form {
 } */
 
 #one, #two{
-  border: 3px solid var(--input-bg-color);
+  border: 2px solid var(--input-bg-color);
   width: 100%;
   padding: 2px 12px;
   border-radius: 8px;
@@ -110,7 +110,7 @@ form {
 }
 
 #one:focus, #two:focus{
-  border: 3px solid var(--strong-cyan);
+  border: 2px solid var(--strong-cyan);
 
 }
 
@@ -178,6 +178,7 @@ form {
   transition: all .3s ease;
 }
 
+
 .porcent .porcent-item:focus,
 .porcent-item:hover {
   background: var(--strong-cyan);
@@ -192,7 +193,7 @@ form {
 
   color: var(--font-input-color);
   background: var(--input-bg-color);
-  border: 3px solid var(--input-bg-color);
+  border: 2px solid var(--input-bg-color);
 
   text-transform: capitalize;
 }
@@ -200,7 +201,7 @@ form {
 .porcent-item:last-child:focus,
 .porcent-item:last-child:hover {
 
-  border: 3px solid var(--strong-cyan);
+  border: 2px solid var(--strong-cyan);
 }
 
 .num-people label {
