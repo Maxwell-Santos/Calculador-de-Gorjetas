@@ -24,8 +24,9 @@
           <label for="input-num">Bill</label>
 
           <div class="bill-input">
+            <p>Can't be zero</p>
             <img src="src/images/icon-dollar.svg" alt="icon dolar">
-            <input type="number" name="price" class="input-num" placeholder="0">
+            <input type="number" name="price" class="input-num" placeholder="0" id="one" required>
           </div>
 
         </div>
@@ -35,14 +36,11 @@
           <span>Select Tip %</span>
 
           <div class="porcent">
-            <button class="porcent-item">5%</button>
-            <button class="porcent-item">10%</button>
-            <button class="porcent-item">15%</button>
-            <button class="porcent-item">25%</button>
-            <button class="porcent-item">50%</button>
-
-            <!-- <button class="porcent-item">custom</button> -->
-
+            <input type="button" class="porcent-item" onclick="calcPorcentage('5')" value="5%">   
+            <input type="button" class="porcent-item" onclick="calcPorcentage('10')" value="10%">  
+            <input type="button" class="porcent-item" onclick="calcPorcentage('15')" value="15%">  
+            <input type="button" class="porcent-item" onclick="calcPorcentage('25')" value="25%">  
+            <input type="button" class="porcent-item" onclick="calcPorcentage('50')" value="50%">  
 
             <input type="number" id="custom-porcent" class="porcent-item" value="" placeholder="custom">
 
@@ -54,10 +52,12 @@
           <label for="input-num">Number of people</label>
 
           <div class="people-input">
+            <p>Can't be zero</p>
             <img src="src/images/icon-person.svg" alt="icon person">
-            <input type="number" name="persons" class="input-num" placeholder="0">
+            <input type="number" name="persons" class="input-num" placeholder="0" id="two" required>
           </div>
 
+        </div>
       </section>
 
 
@@ -87,7 +87,7 @@
 
         </div>
 
-        <input type="reset" value="reset" class="reset">
+        <input type="reset" value="reset" class="reset" disabled>
 
       </section>
 
@@ -100,6 +100,7 @@
   </footer>
 
   <script src="src/script/index.js"></script>
+  <script src="src/script/input-focus.js"></script>
 </body>
 
 </html>
