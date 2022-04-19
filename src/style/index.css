@@ -70,6 +70,7 @@ main {
   width: 70%;
   max-width: 900px;
   background: var(--white);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.2);
   border-radius: 20px;
 
   transform: translateY(1.5rem);
@@ -85,6 +86,7 @@ form {
 
 #bill-content,
 #count-content {
+  min-width: 354px;
   height: 345px;
   flex: 1;
 }
@@ -93,10 +95,16 @@ form {
   font-size: .6em;
   font-weight: 700;
 }
-/* 
-#one:invalid, #two:invalid{
-  border: 3px solid rgb(248, 64, 64);
-} */
+
+#one.active, #two.active, #custom-porcent.active{
+  border: 2px solid rgb(248, 64, 64);
+}
+
+#one.active:valid, 
+#two.active:valid, 
+#custom-porcent.porcent:valid{
+  border: 2px solid var(--input-bg-color);
+}
 
 #one, #two{
   border: 2px solid var(--input-bg-color);
@@ -185,7 +193,7 @@ form {
   color: var(--constrast-color);
 }
 
-.porcent .porcent-item:last-child {
+.porcent #custom-porcent {
   width: 100%;
   text-align: center;
   padding: 2px;
@@ -198,8 +206,8 @@ form {
   text-transform: capitalize;
 }
 
-.porcent-item:last-child:focus,
-.porcent-item:last-child:hover {
+#custom-porcent:focus,
+#custom-porcent:hover {
 
   border: 2px solid var(--strong-cyan);
 }
