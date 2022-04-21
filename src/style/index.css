@@ -26,6 +26,9 @@ body {
 
   --strong-cyan: hsl(172, 67%, 45%);
   --constrast-color: hsl(183, 100%, 15%);
+
+  --font-input-color-i: hsl(183, 100%, 15%);
+
   --font-input-color: hsl(186, 14%, 43%);
   --Grayish-cyan: hsl(184, 14%, 56%);
   --bg-color: hsl(185, 41%, 84%);
@@ -51,12 +54,15 @@ input[type=number]{
 
   color: var(--font-input-color);
   background: none;
-
+  
   font-weight: 700;
   font-size: 1em;
 
 }
+#one, #two{
+  color: var(--font-input-color-i);
 
+}
 /*serve para tirar as setas chatas que ficam de quando a text box é do tipo number*/
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
@@ -70,7 +76,7 @@ main {
   width: 70%;
   max-width: 900px;
   background: var(--white);
-  box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   border-radius: 20px;
 
   transform: translateY(1.5rem);
@@ -86,7 +92,7 @@ form {
 
 #bill-content,
 #count-content {
-  min-width: 354px;
+
   height: 345px;
   flex: 1;
 }
@@ -94,6 +100,7 @@ form {
 #bill-content .bill label {
   font-size: .6em;
   font-weight: 700;
+  color: var(--font-input-color);
 }
 
 #one.active, #two.active, #custom-porcent.active{
@@ -110,7 +117,7 @@ form {
   border: 2px solid var(--input-bg-color);
   width: 100%;
   padding: 2px 12px;
-  border-radius: 8px;
+  border-radius: 6px;
   background: var(--input-bg-color);
 
   text-align: end;
@@ -143,14 +150,17 @@ form {
   right: 10px;
   top: -25px;
   opacity: 0;
-  transform: translateX(30px);
+  /* display: none; */
+  transform: translateX(20px);
   
   transition: all .3s ease-in;
 }
 
 .bill-input:hover p, .people-input:hover p{
-  transform: translateX(0);
+  /* display: block; */
   opacity: 1;
+  transform: translateX(0);
+
 }
 
 
@@ -161,6 +171,8 @@ form {
 
 .porcent-content span {
   font-size: .6em;
+  font-weight: 700;
+  color: var(--font-input-color);
 }
 
 .porcent {
@@ -172,13 +184,13 @@ form {
 }
 
 .porcent .porcent-item {
-  padding: 5px;
+  padding: 3px 5px;
   border-radius: 5px;
   border: none;
 
   color: var(--white);
   font-weight: 700;
-  font-size: .8em;
+  font-size: .9em;
 
   background: var(--constrast-color);
 
@@ -214,6 +226,8 @@ form {
 
 .num-people label {
   font-size: .6em;
+  font-weight: 700;
+  color: var(--font-input-color);
 }
 
 /*==============RIGHT SIDE====================*/

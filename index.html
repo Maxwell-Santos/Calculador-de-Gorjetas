@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.ico">
+
   <link rel="stylesheet" href="src/style/index.css">
   <link rel="stylesheet" href="src/style/response.css">
 
@@ -13,9 +14,10 @@
 </head>
 
 <body>
-  <h1>spli<br>tter</h1>
 
+  <h1>spli<br>tter</h1>
   <main>
+
     <form>
       <section id="bill-content">
 
@@ -25,8 +27,9 @@
           <div class="bill-input">
             <p>Can't be zero</p>
             <img src="src/images/icon-dollar.svg" alt="icon dolar">
-            <input type="number" name="price" class="input-num" placeholder="0" id="one" onkeypress="digitar(event)" required>
-          
+            <input type="number" name="price" class="input-num" placeholder="0" id="one" onkeypress="OnClickEnter(event)"
+              required>
+
           </div>
         </div>
 
@@ -35,14 +38,16 @@
           <span>Select Tip %</span>
 
           <div class="porcent">
-            <button type="button" class="porcent-item" name="item" onclick="calcPorcentage('5')" > 5%  </button>
-            <button type="button" class="porcent-item" name="item" onclick="calcPorcentage('10')"> 10% </button>
-            <button type="button" class="porcent-item" name="item" onclick="calcPorcentage('15')"> 15% </button>
-            <button type="button" class="porcent-item" name="item" onclick="calcPorcentage('25')"> 25% </button>
-            <button type="button" class="porcent-item" name="item" onclick="calcPorcentage('50')"> 50% </button>
+            <button type="button" class="porcent-item" name="item" onclick="calcPercentage('5')"> 5% </button>
+            <button type="button" class="porcent-item" name="item" onclick="calcPercentage('10')"> 10% </button>
+            <button type="button" class="porcent-item" name="item" onclick="calcPercentage('15')"> 15% </button>
+            <button type="button" class="porcent-item" name="item" onclick="calcPercentage('25')"> 25% </button>
+            <button type="button" class="porcent-item" name="item" onclick="calcPercentage('50')"> 50% </button>
 
-            <input type="number" id="custom-porcent" class="porcent-item" value="" placeholder="custom" onkeypress="digitar(event)"
-            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="3">
+            <input type="number" id="custom-porcent" class="porcent-item" value="" placeholder="custom"
+              onkeypress="OnClickEnter(event)"
+              oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              maxlength="3">
 
           </div>
         </div>
@@ -54,7 +59,8 @@
           <div class="people-input">
             <p>Can't be zero</p>
             <img src="src/images/icon-person.svg" alt="icon person">
-            <input type="number" name="persons" class="input-num" placeholder="0" id="two"  onkeypress="digitar(event)" required>
+            <input type="number" name="persons" class="input-num" placeholder="0" id="two" onkeypress="OnClickEnter(event)"
+              required>
           </div>
 
         </div>
@@ -99,8 +105,49 @@
     Coded by <a href="https://github.com/Maxwell-Santos" target="_blank">Maxwell Santos</a>
   </footer>
 
-  <script src="src/script/index.js"></script>
-  <script src="src/script/input-focus.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
+  <script>
+
+
+    TweenMax.staggerFrom('h1', 1.4, {
+      delay: 0.2,
+      opacity: 0,
+      y: -10,
+      ease: Expo.easeOut
+
+    });
+    TweenMax.staggerFrom('main', 1, {
+      delay: 0.2,
+      opacity: 0,
+      y: 50,
+      ease: Expo.easeInOut
+
+    });
+
+    TweenMax.staggerFrom('#bill-content', 1, {
+      delay: 0.5,
+      opacity: 0,
+      x: -50,
+      ease: Expo.easeInOut
+
+    });
+    TweenMax.staggerFrom('#count-content', 1, {
+      delay: 0.5,
+      opacity: 0,
+      x: 50,
+      ease: Expo.easeInOut
+
+    });
+    TweenMax.staggerFrom('.attribution', 1.6, {
+      delay: 0.5,
+      opacity: 0,
+      x: 50,
+      ease: Expo.easeInOut
+
+    });
+  </script>
+    <script src="src/script/index.js"></script>
 </body>
 
 </html>
