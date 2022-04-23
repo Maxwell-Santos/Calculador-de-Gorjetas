@@ -18,13 +18,12 @@
 ### Screenshot
 
 ![Screenshot](./src/images/screenshot.jpg)
-
 - Mobile-design
 <img src="./src/images/screenshot-mobile.jpg" width="100px" height="300px" alt="Mobile-design">
-### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/tip-calculator-r1QVkyWSc)
-- Live Site URL: [Add live site URL here](https://calculador-de-gorjetas.vercel.app/)
+### Links
+- Solution URL: [Solução](https://www.frontendmentor.io/solutions/tip-calculator-r1QVkyWSc)
+- Live Site URL: [link do site](https://calculador-de-gorjetas.vercel.app/)
 
 ## Meu processo
 
@@ -43,7 +42,6 @@
 <p>Esse atributo js serve para definir uma quantidade de character máximo ao input do type number, nesse caso eu coloquei 3, pois esse input recebe um valor de porcentagem digitado pelo usuário, como no máximo é 100%, o usuário fica limitado a digitar 3 números e no index.js verifica se ele é maior ou menos que 100 </p>
 
 ```html
-
 <input type="number" id="custom-porcent" class="porcent-item" value="" placeholder="custom" onkeypress="OnClickEnter(event)" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="3">
 ```
 <p>Aqui é uma das células de porcetagem pré definido</p><br>
@@ -85,7 +83,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 ```
-- Na div das porcentagens, distribuí com usando <code>display: grid</code>, assim para facilitar na manipulação das células e posicionar de acordo com o tamanho da tela 
+- Na div das porcentagens, distribuí com <code>display: grid</code>, para facilitar na manipulação das células e posicionar de acordo com o tamanho da tela 
 
 <img src="./src/images/grid-porcent.jpg">
 
@@ -166,7 +164,7 @@ function customPercentage(customPorcent) { //Esse parâmetro é o custom_porcent
 }
 ```
 
-<p>Ou seja, essa função de calcular pode receber como parâmetro tanto o valor pré definido no html, quanto um valor customizado</p>
+<p>Ou seja, essa função <code>calcPercentage()</code>de calcular pode receber como parâmetro tanto o valor pré definido no html, quanto um valor customizado</p>
 
 ```html
     <button type="button" class="porcent-item" name="item" onclick="calcPercentage('5')"> 5% </button>
@@ -188,7 +186,7 @@ function calcPercentage(porcent) { //calc porcentage of tip
   if (price.value == '' || persons.value == '') {
     alert('preencha os campos')
 
-    controlBorders();
+    controlBorders(); //função global para não ficar repetidno código sempre que precisar alterar classes
 
   } else {
     show(tipForPerson, totalforPerson)
