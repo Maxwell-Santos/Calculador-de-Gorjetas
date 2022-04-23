@@ -43,7 +43,7 @@ reset.addEventListener('click', () => { //reset the aplication
 function OnClickEnter(event) {
   var x = event.keyCode;
 
-  if (x == 13) {
+  if (x == 13) { //13 is the code of button enter on keyboard
 
     //se os campos obrigátórios n estiverem preenchido, faça isso
     //if the required fields are not filled, do this
