@@ -12,7 +12,7 @@ window.onload = () => {
 
   setTimeout(() => {
     price.focus();
-    alert('Caso queira uma porcentagem da sua preferência, basta digitar o valor na área "Custom" e clicar Enter');
+    alert('If you want a percentage of your preference, just type the value in the "Custom" area and click Enter');
 
   }, 2000)
 }
@@ -49,24 +49,24 @@ function OnClickEnter(event) {
     //if the required fields are not filled, do this
     if (price.value == '' && persons.value == '' && custom_porcent.value == '') {
 
-      alert('Preencha os campos')
+      alert('fill in the fields')
       controlBorders();
 
 
     } else if(price.value == '' && persons.value !== '' && custom_porcent.value == ''){
-      alert('Preencha o campo Bill')
+      alert('fill in the bill field')
       price.focus();
 
 
     } else if (price.value !== '' && persons.value == '' && custom_porcent.value == '') {
-      alert('Preencha o campo Number of People')
+      alert('Fill in the Number of People field')
       persons.focus();
       
       //se não, se os campos obrigatórios estiverem preenchidos mas o usuário não definiu uma porcentagem, faça isso
       //if not, if the required fields are filled in but the user has not set a percentage, do so
     } else if (price.value !== '' && persons.value !== '' && custom_porcent.value == '') {
 
-      alert('Escolha uma porcentagem, ou defina um valor da sua preferência')
+      alert('Choose a percentage, or set a value of your own')
       custom_porcent.focus()
 
 
@@ -74,7 +74,7 @@ function OnClickEnter(event) {
 
       if (custom_porcent.value > 100) {//o valor máximo da porcentagem e 100%
 
-        alert('O valor máximo é 100')
+        alert('the maximum value is 100')
 
         custom_porcent.value = ''
         custom_porcent.focus()

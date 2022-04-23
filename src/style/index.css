@@ -240,10 +240,11 @@ form {
   position: relative;
 }
 
-#count-content h3 {
+#count-content .title {
   font-size: .6em;
   font-weight: 700;
   text-transform: capitalize;
+  color: var(--white);
 }
 
 #count-content p {
