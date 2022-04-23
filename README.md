@@ -1,26 +1,30 @@
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+- [Meu processo](#my-process)
+  - [Construído com](#built-with)
+  - [O que eu aprendi](#O-que-eu-aprendi)
+  - [Reset disabled](#Reset-disabled)
+  - [Tratamento de erros](#Tratamento-de-erros-para-valores-null)
+- [Autor](#autor)
+- [Agradecimentos](#Agradecimentos)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
+
+
+
 ### Screenshot
 
-![Screenshot](./src/images/screenshot.jpg)
-- Mobile-design
-<img src="./src/images/screenshot-mobile.jpg" width="100px" height="300px" alt="Mobile-design">
+<div style="display: grid; grid-template-columns: 1fr 300px; grid-template-rows: 1fr;">
 
+<img src="./src/images/screenshot.jpg" alt="Mobile-design">
+<img src="./src/images/screenshot-mobile.jpg" alt="Mobile-design">
+
+</div>
 ### Links
 - Solution URL: [Solução](https://www.frontendmentor.io/solutions/tip-calculator-r1QVkyWSc)
 - Live Site URL: [link do site](https://calculador-de-gorjetas.vercel.app/)
