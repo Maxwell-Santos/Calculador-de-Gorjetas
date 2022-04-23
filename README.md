@@ -15,16 +15,24 @@
 
 ## Overview
 
-
-
+<style>
+  .img{
+    display: grid; grid-template-columns: 1fr 300px; grid-template-rows: 1fr;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+  }
+</style>
 ### Screenshot
 
-<div style="display: grid; grid-template-columns: 1fr 300px; grid-template-rows: 1fr;">
+<div class="img">
 
 <img src="./src/images/screenshot.jpg" alt="Mobile-design">
 <img src="./src/images/screenshot-mobile.jpg" alt="Mobile-design">
 
 </div>
+
 ### Links
 - Solution URL: [Solução](https://www.frontendmentor.io/solutions/tip-calculator-r1QVkyWSc)
 - Live Site URL: [link do site](https://calculador-de-gorjetas.vercel.app/)
