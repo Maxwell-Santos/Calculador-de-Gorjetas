@@ -18,8 +18,9 @@
 ### Screenshot
 
 ![Screenshot](./src/images/screenshot.jpg)
-- Mobile design
-![Screenshot-mobile](./src/images/screenshot-mobile.jpg)
+
+- Mobile-design
+<img src="./src/images/screenshot-mobile.jpg" width="100px" height="300px" alt="Mobile-design">
 ### Links
 
 - Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/tip-calculator-r1QVkyWSc)
