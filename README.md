@@ -53,10 +53,59 @@
 <button type="button" class="porcent-item" name="item" onclick="calcPercentage('5')"> 5% </button>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+/*serve para tirar as setas que ficam de quando o input é do tipo number*/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
 }
 ```
+- São 3 inputs que o usuário consegue escrever algum valor. Caso algum deles não forem de acordo com o esperado, as bordas ficam vermelhas, avisando que há algo de errado com aquele input, e o js se encarrega de alertar o que está errado
+
+<p>Ex: clicar Enter para fazer o calculo, porém não preencheu um dos campos</p>
+
+<img src="./src/images/error/campo vazio.jpg" alt="error campo vazio">
+
+```css
+
+/*Quando clica Enter, e algum desses input não forem preenchidos, o js adiciona essa class "active"*/
+#one.active, #two.active, #custom-porcent.active{
+  border: 2px solid rgb(248, 64, 64);
+}
+
+/*Caso seja um valor válido, ex: diferente de vazio*/
+/*ou no caso da #custom-porcent, também verifica se o valor é abaixo de 100 (daí ele se torna válido)*/
+/*As bordas voltam ao normal, indicando que está tudo certo naquele campo*/
+#one.active:valid, 
+#two.active:valid, 
+#custom-porcent.porcent:valid{
+  border: 2px solid var(--input-bg-color);
+}
+
+```
+- Na div das porcentagens, distribuí com usando <code>display: grid</code>, assim para facilitar na manipulação das células e posicionar de acordo com o tamanho da tela 
+
+<img src="./src/images/grid-porcent.jpg">
+
+```css
+.porcent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /*Serão 3 colunas com a largura responsiva*/
+  grid-template-rows: 1fr 1fr; /*duas linhas com a largura responsiva*/
+  gap: 10px; /*um espaço de 10px entre eles */
+  align-items: center; /*cada item está posicionado ao centro de sua respectia célula*/
+}
+
+```
+### Reset disabled
+
+<p>O botão reset apenas liga quando todo os campos forem preenchidos</p>
+<img src="./src/images/use cases/reset-d.jpg">
+
+<img src="./src/images/use cases/reset-a.jpg">
+
 ```js
 const proudOfThisFunc = () => {
   console.log('🎉')

@@ -63,7 +63,7 @@ input[type=number]{
   color: var(--font-input-color-i);
 
 }
-/*serve para tirar as setas chatas que ficam de quando a text box é do tipo number*/
+/*serve para tirar as setas que ficam de quando o input é do tipo number*/
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -103,10 +103,14 @@ form {
   color: var(--font-input-color);
 }
 
+/*Quando clica Enter, e algum desses input não forem preenchidos, o js adiciona essa class "active"*/
 #one.active, #two.active, #custom-porcent.active{
   border: 2px solid rgb(248, 64, 64);
 }
 
+
+/*Caso seja um valor válido, ex: diferente de vazio*/
+/*ou no caso da #custom-porcent, também verifica se o valor é abaixo de 100 (daí ele se torna válido)*/
 #one.active:valid, 
 #two.active:valid, 
 #custom-porcent.porcent:valid{

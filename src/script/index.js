@@ -52,7 +52,7 @@ function OnClickEnter(event) {
       alert('fill in the fields')
       controlBorders();
 
-
+      
     } else if(price.value == '' && persons.value !== '' && custom_porcent.value == ''){
       alert('fill in the bill field')
       price.focus();
