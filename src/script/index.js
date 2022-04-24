@@ -112,7 +112,7 @@ function calcPercentage(porcent) { //calc porcentage of tip
   const totalforPerson = (price.value / persons.value) + tipForPerson
 
   if (price.value == '' || persons.value == '') {
-    alert('preencha os campos')
+    alert('fill in the fields!')
 
     controlBorders();
 
