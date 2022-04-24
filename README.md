@@ -16,13 +16,8 @@
 ## Overview
 
 <style>
-  .img{
-    display: grid; grid-template-columns: 1fr 300px; grid-template-rows: 1fr;
-  }
-  img{
-    width: 100%;
-    height: 100%;
-  }
+ .img{display: grid; grid-template-columns: 1fr 300px; grid-template-rows: 1fr;}
+ img{width: 100%; height: 100%;}
 </style>
 
 ### Screenshot
