@@ -16,17 +16,15 @@
 ## Overview
 
 <style>
- .img{display: grid; grid-template-columns: 1fr 300px; grid-template-rows: 1fr;}
+ .img{display: flex; height:600px; width: 100%;}
  img{width: 100%; height: 100%;}
 </style>
 
 ### Screenshot
 
 <div class="img">
-
 <img src="./src/images/screenshot.jpg" alt="Mobile-design">
 <img src="./src/images/screenshot-mobile.jpg" alt="Mobile-design">
-
 </div>
 
 ### Links
