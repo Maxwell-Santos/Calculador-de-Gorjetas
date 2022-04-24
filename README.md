@@ -3,28 +3,23 @@
 - [Overview](#overview)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [Meu processo](#my-process)
-  - [Construído com](#built-with)
-  - [O que eu aprendi](#O-que-eu-aprendi)
-  - [Reset disabled](#Reset-disabled)
-  - [Tratamento de erros](#Tratamento-de-erros-para-valores-null)
+- [Meu processo](#meu-processo)
+  - [Construído com](#construído-com)
+  - [O que eu aprendi](#o-que-eu-aprendi)
+  - [Reset disabled](#reset-disabled)
+  - [Tratamento de erros](#tratamento-de-erros-para-valores-null)
 - [Autor](#autor)
-- [Agradecimentos](#Agradecimentos)
+- [Agradecimentos](#agradecimentos)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
-<style>
- .img{display: flex; height:600px; width: 100%;}
- img{width: 100%; height: 100%;}
-</style>
-
 ### Screenshot
 
 <div class="img">
-<img src="./src/images/screenshot.jpg" alt="Mobile-design">
-<img src="./src/images/screenshot-mobile.jpg" alt="Mobile-design">
+<img src="./src/images/screenshot.jpg" alt="Mobile-design" width=75%>
+<img src="./src/images/screenshot-mobile.jpg" alt="Mobile-design" width=20%>
 </div>
 
 ### Links
@@ -70,7 +65,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 <p>Ex: clicar Enter para fazer o calculo, porém não preencheu um dos campos</p>
 
-<img src="./src/images/error/campo vazio.jpg" alt="error campo vazio">
+<img src="./src/images/error/campo vazio.jpg" alt="error campo vazio" width=300px>
 
 ```css
 
