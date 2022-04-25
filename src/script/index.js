@@ -8,11 +8,20 @@ const total_person = document.querySelector('#total-person') // show the result 
 
 const reset = document.querySelector('.reset')
 
+//essa variável vai manipular o idioma dos alerts
+const lang = navigator.language; //recebe a linguagem do navegador
+
 window.onload = () => {
 
   setTimeout(() => {
     price.focus();
-    alert('If you want a percentage of your preference, just type the value in the "Custom" area and click Enter');
+
+    if(lang == 'en-US'){
+      alert('If you want a percentage of your preference, just type the value in the "Custom" area and click Enter');
+    } else{
+      alert('Caso queira um percentual de sua preferência, basta digitar o valor na área "Custom" e clicar em Enter');
+
+    }
 
   }, 2000)
 }
@@ -49,32 +58,56 @@ function OnClickEnter(event) {
     //if the required fields are not filled, do this
     if (price.value == '' && persons.value == '' && custom_porcent.value == '') {
 
-      alert('fill in the fields')
+      if(lang == 'en-US'){
+        alert('Fill in the fields')
+      } else {
+        alert('Preencha os campos')
+      }
       controlBorders();
 
       
     } else if(price.value == '' && persons.value !== '' && custom_porcent.value == ''){
-      alert('fill in the bill field')
+
+      if(lang == 'en-US'){
+        alert('Fill in the Bill field')
+      } else {
+        alert('Fill in the Conta field')
+      }
+
       price.focus();
 
 
     } else if (price.value !== '' && persons.value == '' && custom_porcent.value == '') {
-      alert('Fill in the Number of People field')
+
+      if(lang == 'en-US'){
+        alert('Fill in the Number of People field')
+      } else {
+        alert('Preencha o campo Número de Pessoas')
+      }
+
       persons.focus();
       
       //se não, se os campos obrigatórios estiverem preenchidos mas o usuário não definiu uma porcentagem, faça isso
       //if not, if the required fields are filled in but the user has not set a percentage, do so
     } else if (price.value !== '' && persons.value !== '' && custom_porcent.value == '') {
 
-      alert('Choose a percentage, or set a value of your own')
-      custom_porcent.focus()
+      if(lang == 'en-US'){
+        alert('Choose a percentage, or set a value of your own')
+      } else {
+        alert('Escolha uma porcentagem, ou defina um valor da sua preferência')
+      }
 
+      custom_porcent.focus()
 
     } else {
 
       if (custom_porcent.value > 100) {//o valor máximo da porcentagem e 100%
 
-        alert('the maximum value is 100')
+        if(lang == 'en-US'){
+          alert('the maximum value is 100')
+        } else {
+          alert('O valor máximo é 100')
+        }
 
         custom_porcent.value = ''
         custom_porcent.focus()
@@ -112,7 +145,12 @@ function calcPercentage(porcent) { //calc porcentage of tip
   const totalforPerson = (price.value / persons.value) + tipForPerson
 
   if (price.value == '' || persons.value == '') {
-    alert('fill in the fields!')
+
+    if(lang == 'en-US'){
+      alert('fill in the fields!')
+    } else {
+      alert('Preencha os campos!')
+    }
 
     controlBorders();
 

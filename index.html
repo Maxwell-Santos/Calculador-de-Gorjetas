@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" xml:lang="en">
+
+<html lang="pt-BR" xml:lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
@@ -9,23 +10,22 @@
   <link rel="stylesheet" href="src/style/index.css">
   <link rel="stylesheet" href="src/style/response.css">
 
-  <title>Tip calculator app</title>
+  <title translate="yes">Tip calculator app</title>
 
 </head>
-
 <body>
 
-  <h1>spli<br>tter</h1>
+  <h1 translate="no">spli<br>tter</h1>
   <main>
 
     <form>
       <section id="bill-content">
 
         <div class="bill">
-          <label for="one">Bill</label>
+          <label for="one">Conta</label>
 
           <div class="bill-input">
-            <p>Can't be zero</p>
+            <p>Não pode ser zero</p>
             <img src="src/images/icon-dollar.svg" alt="icon dolar">
             <input type="number" name="price" class="input-num" placeholder="0" id="one" onkeypress="OnClickEnter(event)"
               required>
@@ -35,7 +35,7 @@
 
         <div class="porcent-content">
 
-          <span>Select Tip %</span>
+          <span>Selecionar % da Gorjeta</span>
 
           <div class="porcent">
             <button type="button" class="porcent-item" name="item" onclick="calcPercentage('5')"> 5% </button>
@@ -47,17 +47,17 @@
             <input type="number" id="custom-porcent" class="porcent-item" value="" placeholder="custom"
               onkeypress="OnClickEnter(event)"
               oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-              maxlength="3">
+              maxlength="3" translate="no">
 
           </div>
         </div>
 
 
         <div class="num-people">
-          <label for="two">Number of people</label>
+          <label for="two">Número de Pessoas</label>
 
           <div class="people-input">
-            <p>Can't be zero</p>
+            <p>Não pode ser zero</p>
             <img src="src/images/icon-person.svg" alt="icon person">
             <input type="number" name="persons" class="input-num" placeholder="0" id="two" onkeypress="OnClickEnter(event)"
               required>
@@ -71,7 +71,7 @@
 
         <div class="tip-amount-content">
           <div>
-            <p class="title">tip amount</p>
+            <p class="title">quantidade de gorjeta</p>
             <p>/ person</p>
           </div>
 
@@ -93,7 +93,7 @@
 
         </div>
 
-        <button type="button" class="reset" disabled>reset</button>
+        <button type="button" class="reset" translate="no" disabled>reset</button>
 
       </section>
 
