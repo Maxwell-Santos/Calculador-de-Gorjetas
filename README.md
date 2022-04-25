@@ -43,7 +43,7 @@
 ```html
 <input type="number" id="custom-porcent" class="porcent-item" value="" placeholder="custom" onkeypress="OnClickEnter(event)" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="3">
 ```
-<p>Aqui é uma das células de porcetagem pré definido</p><br>
+
 <p>Essa função é chamada para cada porcentagem pré definidada, e tem como parâmetro o valor da porcentagem desejado para fazer o calculo</p>
 
 ```html
