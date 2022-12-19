@@ -311,13 +311,13 @@ footer a{
   color: white;
   
 }
-footer a:last-child{
+footer a{
   color: var(--constrast-color);
   font-weight: 700;
   position: relative;
 }
 
-footer a:last-child::after{
+footer a::after{
   content: '';
   position: absolute;
   left: 0;
@@ -329,7 +329,7 @@ footer a:last-child::after{
   transition: all .3s;
   transform-origin: center;
 }
-footer a:last-child:hover::after{
+footer a:hover::after{
   width: 100%;
 }
 
